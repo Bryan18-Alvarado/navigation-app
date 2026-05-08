@@ -2,20 +2,23 @@ import { Text, View } from 'react-native'
 
 const App = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-4xl font-work-black text-blue-800">
-        Hola Mundo Black
+    <View className="flex-1 items-center justify-center bg-white px-10">
+      <Text className="text-5xl font-work-black text-primary">Primary</Text>
+
+      <Text className="text-4xl font-work-medium text-secondary mt-4">
+        Secondary
       </Text>
 
-      <Text className="text-3xl font-work-medium text-gray-800 mt-4">
-        Hola Mundo Medium
+      <Text className="text-3xl font-work-light text-tertiary mt-4">
+        Tertiary
       </Text>
 
-      <Text className="text-2xl font-work-light text-gray-500 mt-4">
-        Hola Mundo Light
-      </Text>
+      <View className="mt-10 bg-primary p-4 rounded-2xl w-full items-center">
+        <Text className="text-white font-work-medium text-lg">
+          Botón de Marca
+        </Text>
+      </View>
     </View>
   )
 }
-
 export default App
