@@ -1,24 +1,32 @@
-import { Text, View } from 'react-native'
+import CustomButton from '@/components/shared/CustomButton'
+import { Link } from 'expo-router'
+import { View } from 'react-native'
 
 const App = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-white px-10">
-      <Text className="text-5xl font-work-black text-primary">Primary</Text>
+    <View className="flex-1 px-10 py-20 bg-white">
+      <CustomButton
+        onPress={() => console.log('Botón presionado')}
+        className="mb-5"
+      >
+        Click Me
+      </CustomButton>
 
-      <Text className="text-4xl font-work-medium text-secondary mt-4">
-        Secondary
-      </Text>
+      <Link href="/products" asChild>
+        <CustomButton color="secondary" className="mb-5">
+          Ver Productos
+        </CustomButton>
+      </Link>
 
-      <Text className="text-3xl font-work-light text-tertiary mt-4">
-        Tertiary
-      </Text>
+      <Link href="/profile" asChild>
+        <CustomButton color="tertiary">Mi Perfil</CustomButton>
+      </Link>
 
-      <View className="mt-10 bg-primary p-4 rounded-2xl w-full items-center">
-        <Text className="text-white font-work-medium text-lg">
-          Botón de Marca
-        </Text>
-      </View>
+      <Link href="/settings" asChild>
+        <CustomButton color="other">Configuraciones</CustomButton>
+      </Link>
     </View>
   )
 }
+
 export default App
