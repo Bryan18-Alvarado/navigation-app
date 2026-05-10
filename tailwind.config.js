@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         primary: '#49129C',
         secondary: '#7638F3',
-        tertiary: '#F29672'
+        tertiary: '#F29672',
+        other: '#EEBC4B'
       },
       fontFamily: {
         'work-black': ['WorkSans-Black', 'sans-serif'],
