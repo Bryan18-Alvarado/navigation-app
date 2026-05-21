@@ -57,7 +57,7 @@ Se utilizan pestañas inferiores para navegar entre diferentes vistas como:
 Clonar el repositorio:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Bryan18-Alvarado/navigation-app.git
 ```
 
 Entrar al proyecto:
@@ -116,10 +116,11 @@ npx expo start --clear
 
 ```bash
 app/
-├── (tabs)/
-├── products/
+├── (drawer)
+├──  (tabs)/
+├──   products/
+├──   settings/
 ├── profile/
-├── settings/
 └── favorites/
 ```
 
@@ -127,7 +128,7 @@ app/
 
 ## Objetivo del proyecto
 
-El objetivo principal de esta aplicación es practicar y comprender:
+El objetivo principal de esta aplicación es practicar y aprender a usar:
 
 - Navegación dinámica
 - Rutas anidadas
@@ -135,9 +136,9 @@ El objetivo principal de esta aplicación es practicar y comprender:
 - Tabs Navigation
 - Manejo de pantallas en Expo Router
 - Organización de proyectos React Native
+- aprender a usar NativeWind y integrarlo en un proyecto
 
 ---
 
 ## Autor
-
 Bryan Alvarado
