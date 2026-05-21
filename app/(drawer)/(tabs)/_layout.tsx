@@ -12,7 +12,7 @@ const TabsLayout = () => {
       <Tabs.Screen
         name="(stack)"
         options={{
-          title: 'Home Screen',
+          title: 'Home',
           headerShown: false,
           tabBarIcon: ({ color }) => (
             <Ionicons size={28} name="person-outline" color={color} />
