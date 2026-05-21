@@ -1,13 +1,10 @@
 import { Image, ScrollView, Text, View } from 'react-native'
-
 const ProfileScreen = () => {
   return (
     <ScrollView className="flex-1 bg-white">
       <View className="items-center pt-16 pb-8 bg-blue-600 rounded-b-[40px]">
         <Image
-          source={{
-            uri: 'https://i.pravatar.cc/300'
-          }}
+          source={require('../../../../../assets/images/beethoven.webp')}
           className="w-32 h-32 rounded-full border-4 border-white"
         />
 
