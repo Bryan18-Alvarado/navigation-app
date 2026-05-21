@@ -89,7 +89,7 @@ npx expo start
 ### Iniciar Expo
 
 ```bash
-npx expo start
+npx expo start o npm start
 ```
 
 ### Ejecutar en Android
@@ -107,7 +107,7 @@ npx expo run:ios
 ### Limpiar caché
 
 ```bash
-npx expo start --clear
+npx expo start --c
 ```
 
 ---
