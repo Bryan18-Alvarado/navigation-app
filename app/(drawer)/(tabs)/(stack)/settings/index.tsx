@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Pressable, ScrollView, Switch, Text, View } from 'react-native'
+import { Image, Pressable, ScrollView, Switch, Text, View } from 'react-native'
 
 const SettingsScreen = () => {
   const [notifications, setNotifications] = useState(true)
@@ -7,6 +7,19 @@ const SettingsScreen = () => {
 
   return (
     <ScrollView className="flex-1 bg-gray-50">
+      <View className="items-center px-5 pt-16 pb-8 bg-blue-600 rounded-b-[35px]">
+        <Image
+          source={require('../../../../../assets/images/beethoven.webp')}
+          className="w-24 h-24 rounded-full border-4 border-white"
+        />
+
+        <Text className="mt-4 text-white text-2xl font-bold">
+          Bryan Alvarado
+        </Text>
+
+        <Text className="mt-1 text-blue-100">bryan@gmail.com</Text>
+      </View>
+
       <View className="px-5 mt-8">
         <Text className="text-gray-400 uppercase text-xs mb-3">Account</Text>
 
