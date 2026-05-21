@@ -1,23 +1,32 @@
 import CustomButton from '@/components/shared/CustomButton'
-import { Link, router } from 'expo-router'
+import { DrawerActions } from '@react-navigation/native'
+import { Link, router, useNavigation } from 'expo-router'
 import { View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 const HomeScreen = () => {
+  // 1. Obtenemos el objeto de navegación nativo
+  const navigation = useNavigation()
+
+  // 2. Función para disparar la acción de abrir/cerrar el Drawer
+  const onToggleDrawer = () => {
+    navigation.dispatch(DrawerActions.toggleDrawer)
+  }
+
   return (
     <SafeAreaView>
       <View className="px-10 mt-5">
         <CustomButton
           className="mb-2"
           color="primary"
-          onPress={() => router.push('/tabs/(stack)/products')}
+          onPress={() => router.push('/products')}
         >
           Productos
         </CustomButton>
 
         <CustomButton
           color="secondary"
-          onPress={() => router.push('/tabs/profile')}
+          onPress={() => router.push('/profile')}
           className="mb-2"
         >
           Perfil
@@ -25,17 +34,20 @@ const HomeScreen = () => {
 
         <CustomButton
           color="tertiary"
-          onPress={() => router.push('/tabs/settings')}
+          onPress={() => router.push('/settings')}
           className="mb-2"
         >
           Ajustes
         </CustomButton>
 
-        <Link href={'/tabs/products'} asChild>
+        <Link href={'/products'} asChild>
           <CustomButton variant="text-only" className="mb-10" color="primary">
             Productos
           </CustomButton>
         </Link>
+
+        {/* 3. Nuestro nuevo botón controlador */}
+        <CustomButton onPress={onToggleDrawer}>Abrir menú</CustomButton>
       </View>
     </SafeAreaView>
   )

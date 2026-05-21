@@ -4,17 +4,21 @@ import React from 'react'
 
 const TabsLayout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'green' }}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: 'green'
+      }}
+    >
       <Tabs.Screen
         name="(stack)"
         options={{
           title: 'Home Screen',
+          headerShown: false,
           tabBarIcon: ({ color }) => (
             <Ionicons size={28} name="person-outline" color={color} />
           )
         }}
       />
-
       <Tabs.Screen
         name="home/index"
         options={{
@@ -24,7 +28,6 @@ const TabsLayout = () => {
           )
         }}
       />
-
       <Tabs.Screen
         name="favorites/index"
         options={{

@@ -7,3 +7,4 @@ const UserScreen = () => {
     </View>
   )
 }
+export default UserScreen
