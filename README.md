@@ -1,50 +1,143 @@
-# Welcome to your Expo app 👋
+# Navigation App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicación móvil desarrollada con React Native y Expo enfocada en practicar distintos tipos de navegación utilizando `expo-router` y `react-navigation`.
 
-## Get started
+---
 
-1. Install dependencies
+## Características
 
-   ```bash
-   npm install
-   ```
+- Navegación mediante Tabs
+- Drawer Menu (menú hamburguesa)
+- Navegación dinámica entre pantallas
+- Lista de productos
+- Vista de detalles por producto
+- Pantallas de perfil y configuraciones
+- Estilos utilizando NativeWind
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Funcionalidades principales
 
-In the output, you'll find options to open the app in a
+### Productos
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+La aplicación cuenta con una sección de productos donde:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Se muestra una lista de productos disponibles
+- Cada producto puede seleccionarse
+- Al tocar un producto, la app navega dinámicamente hacia una pantalla específica usando su `id`
+- En la vista de detalles se muestra información individual del producto
 
-## Get a fresh project
+### Drawer Navigation
 
-When you're ready, run:
+La app incluye un menú hamburguesa que permite acceder rápidamente a distintas secciones de la aplicación.
+
+### Tabs Navigation
+
+Se utilizan pestañas inferiores para navegar entre diferentes vistas como:
+
+- Home
+- Favorites
+- Profile
+
+---
+
+## Tecnologías utilizadas
+
+- React Native
+- Expo
+- Expo Router
+- React Navigation
+- NativeWind
+- TypeScript
+
+---
+
+## Instalación
+
+Clonar el repositorio:
 
 ```bash
-npm run reset-project
+git clone <repository-url>
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Entrar al proyecto:
 
-## Learn more
+```bash
+cd navigation-app
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Instalar dependencias:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm install
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## Ejecutar el proyecto
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Iniciar el servidor de desarrollo:
+
+```bash
+npx expo start
+```
+
+---
+
+## Comandos útiles
+
+### Iniciar Expo
+
+```bash
+npx expo start
+```
+
+### Ejecutar en Android
+
+```bash
+npx expo run:android
+```
+
+### Ejecutar en iOS
+
+```bash
+npx expo run:ios
+```
+
+### Limpiar caché
+
+```bash
+npx expo start --clear
+```
+
+---
+
+## Estructura general
+
+```bash
+app/
+├── (tabs)/
+├── products/
+├── profile/
+├── settings/
+└── favorites/
+```
+
+---
+
+## Objetivo del proyecto
+
+El objetivo principal de esta aplicación es practicar y comprender:
+
+- Navegación dinámica
+- Rutas anidadas
+- Drawer Navigation
+- Tabs Navigation
+- Manejo de pantallas en Expo Router
+- Organización de proyectos React Native
+
+---
+
+## Autor
+
+Bryan Alvarado
